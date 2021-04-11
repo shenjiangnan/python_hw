@@ -69,17 +69,7 @@ class Application(tk.Frame):
             messagebox.showinfo('',output)
 #other labels and entries
     def intWind(self):
-        frame1 = Frame(self)
-        Label(frame1,text='请输入动物名称').grid(row=0,column=0)
-        Entry(frame1,textvariable=self.AnimalName).grid(row=0,column=1)
-        frame2 = Frame(self)
-        Label(frame2,text='请输入动物种类').grid(row=1,column=0)
-        self.selector = ttk.Combobox(frame2, values=('猫科','犬类','爬行类','小宠物类','水族类'),width=18)
-        self.selector.grid(row=1,column=1)
-        frame1.grid(pady=10)
-        frame2.grid(pady=6)
-        Button(self, text='动物查询',width=10,command=self.buttonActive_AnimalFeature).grid(row=0,column=2)
-        Button(self, text='种类总览',width=10,command=self.buttonActive_AnimalType).grid(row=1,column=2,pady=5)
+      pass       
 if __name__ == '__main__':
     root = tk.Tk()
     application = Application(root=root)

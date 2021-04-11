@@ -66,7 +66,7 @@ class Application(tk.Frame):
             for i in range(len(data['newslist'])):
                 if data['newslist'][i]['name']:
                     output.append(data['newslist'][i]['name'])
-            messagebox.showinfo('',output)
+            messagebox.showinfo('查询结果',output)
 #other labels and entries
     def intWind(self):
         frame1 = Frame(self)
